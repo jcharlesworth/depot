@@ -1501,3 +1501,1141 @@ Rendering store/index
 Rendered store/_cart_item (0.9ms)
 Rendered store/_cart (2.6ms)
 Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 12:56:07) [GET]
+Redirected to http://localhost:3000/store
+Completed in 48ms (DB: 0) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 12:56:07) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (9.1ms)
+Completed in 168ms (View: 161, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 12:59:26) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 12:59:27) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:29) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (18.8ms)
+Rendered store/_cart (24.6ms)
+Completed in 39ms (View: 30, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:30) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.8ms)
+Rendered store/_cart (5.3ms)
+Completed in 71ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:30) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (5.0ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:30) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.1ms)
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:31) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.8ms)
+Rendered store/_cart (5.4ms)
+Completed in 18ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:31) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.8ms)
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:31) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.7ms)
+Rendered store/_cart (5.2ms)
+Completed in 71ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:31) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.1ms)
+Rendered store/_cart (5.6ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:31) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.1ms)
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:31) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.9ms)
+Rendered store/_cart (5.9ms)
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:32) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.9ms)
+Rendered store/_cart (5.4ms)
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:32) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.1ms)
+Completed in 74ms (View: 6, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:32) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (5.3ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:32) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.3ms)
+Rendered store/_cart (5.3ms)
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:32) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.8ms)
+Rendered store/_cart (5.3ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 12:59:32) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.8ms)
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 12:59:33) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 65ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 12:59:33) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:03:29) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.4ms)
+Rendered store/_cart (9.1ms)
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:03:36) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.7ms)
+Rendered store/_cart (5.2ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:04:20) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.9ms)
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:04:21) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.4ms)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:04:22) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.0ms)
+Rendered store/_cart (5.5ms)
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:04:24) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:04:24) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:05:12) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:05:13) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:05:13) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:05:14) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:05:14) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:15) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (5.0ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x1011b7ec8>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:18) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.2ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x10121c8f0>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:18) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.1ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x1018e4fe8>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (108.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:19) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.7ms)
+Rendered store/_cart (5.1ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101e694a0>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (107.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:19) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.8ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x10202bbf8>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (50.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:19) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.9ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x10233be60>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (50.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:19) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.8ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x1010c7928>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:19) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.8ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x10175bf00>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (110.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:20) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.8ms)
+Rendered store/_cart (5.2ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101de8238>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:20) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (4.9ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101f41210>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (111.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:20) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (4.9ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x102216328>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (50.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:05:21) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:05:21) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.4ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:22) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (4.9ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101f99708>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:22) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (5.0ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x1022836f8>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:22) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (4.9ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x100616e98>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:23) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.7ms)
+Rendered store/_cart (6.2ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x1016daa68>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (107.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:23) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.3ms)
+Rendered store/_cart (4.8ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101d9fe20>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (110.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:05:25) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.4ms)
+Rendered store/_cart (1.8ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:27) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.0ms)
+Rendered store/_cart (5.6ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101d24478>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (106.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:27) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.4ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101e96d38>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (110.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:27) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (4.9ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x1020987d0>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:27) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (5.0ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x10238e598>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:05:27) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (4.9ms)
+
+ActionView::TemplateError (undefined method `total_items' for #<Cart:0x101194220>) on line #3 of app/views/store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: 
+3: page[:cart].visual_effect :blind_down if @cart.total_items == 1
+4: 
+5: page[:current_item].visual_effect :highlight,
+6:                                   :startcolor => "#88ff88",
+
+    app/views/store/add_to_cart.js.rjs:3:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/views/store/add_to_cart.js.rjs:1:in `_run_rjs_app47views47store47add_to_cart46js46rjs'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:05:28) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:05:28) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.5ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:06:17) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.1ms)
+Rendered store/_cart (5.5ms)
+Completed in 74ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:06:18) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.7ms)
+Rendered store/_cart (5.2ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:06:20) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:06:20) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:06:22) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.0ms)
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:06:23) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.1ms)
+Rendered store/_cart (5.7ms)
+Completed in 70ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:06:25) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:06:25) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.3ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:06:26) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (5.0ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:06:28) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:06:28) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:12:08) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.1ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:12:09) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.0ms)
+Rendered store/_cart (5.7ms)
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:12:10) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:10) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:12:11) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart (5.0ms)
+Completed in 67ms (View: 57, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:12:13) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:13) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.8ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:31) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:33) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:12:36) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.8ms)
+Rendered store/_cart (5.3ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:12:38) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:38) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:12:39) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (5.2ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:12:41) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:41) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 70ms (View: 63, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:43) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:44) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:45) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.1ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:12:48) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (58.7ms)
+Rendered store/_cart (60.3ms)
+Completed in 76ms (View: 62, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:12:49) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:12:49) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.3ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:13:54) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.3ms)
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:13:55) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.8ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:13:56) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.1ms)
+Completed in 17ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:13:58) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:13:58) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.7ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:14:07) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.0ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:14:09) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:14:09) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 71ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
