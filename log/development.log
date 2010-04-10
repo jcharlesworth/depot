@@ -2639,3 +2639,174 @@ Rendering template within layouts/store
 Rendering store/index
 Rendered store/_cart (1.2ms)
 Completed in 71ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100409212129)
+Migrating to AddPriceToProduct (20100409212231)
+Migrating to AddTestData (20100409215619)
+Migrating to CreateSessions (20100409232822)
+Migrating to CreateOrders (20100410191633)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" text, "email" varchar(255), "pay_type" varchar(10), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100410191633')[0m
+Migrating to CreateLineItems (20100410191826)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "line_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer NOT NULL, "order_id" integer NOT NULL, "quantity" integer NOT NULL, "total_price" decimal(8,2) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100410191826')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("line_items")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:35:22) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (1.5ms)
+Rendered store/_cart (4.8ms)
+Completed in 60ms (View: 11, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-04-10 13:35:24) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (2.7ms)
+Rendered store/_cart (5.1ms)
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://localhost/store/checkout]
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-10 13:35:32) [POST]
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "order"=>{"address"=>"test", "name"=>"test", "pay_type"=>"cheque", "email"=>"test"}}
+
+ActionController::UnknownAction (No action responded to save_order. Actions: add_to_cart, checkout, empty_cart, and index):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-10 13:39:23) [POST]
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "order"=>{"address"=>"test", "name"=>"test", "pay_type"=>"cheque", "email"=>"test"}}
+
+NameError (uninitialized constant Order::LineItems):
+  app/models/order.rb:17:in `add_line_items_from_cart'
+  app/models/order.rb:16:in `each'
+  app/models/order.rb:16:in `add_line_items_from_cart'
+  app/controllers/store_controller.rb:37:in `save_order'
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-10 13:40:17) [POST]
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "order"=>{"address"=>"test", "name"=>"test", "pay_type"=>"cheque", "email"=>"test"}}
+
+NoMethodError (undefined method `total_price' for #<CartItem:0x10038bb88>):
+  app/models/line_item.rb:9:in `from_cart_item'
+  app/models/order.rb:17:in `add_line_items_from_cart'
+  app/models/order.rb:16:in `each'
+  app/models/order.rb:16:in `add_line_items_from_cart'
+  app/controllers/store_controller.rb:37:in `save_order'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-10 13:41:15) [POST]
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "order"=>{"address"=>"test", "name"=>"test", "pay_type"=>"cheque", "email"=>"test"}}
+  [4;35;1mOrder Create (0.4ms)[0m   [0mINSERT INTO "orders" ("name", "address", "created_at", "updated_at", "pay_type", "email") VALUES('test', 'test', '2010-04-10 19:41:15', '2010-04-10 19:41:15', 'cheque', 'test')[0m
+  [4;36;1mLineItem Create (0.1ms)[0m   [0;1mINSERT INTO "line_items" ("created_at", "product_id", "quantity", "order_id", "total_price", "updated_at") VALUES('2010-04-10 19:41:15', 2, 1, 1, 28.5, '2010-04-10 19:41:15')[0m
+Redirected to http://localhost:3000/store
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/store/save_order]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:41:15) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.9ms)
+Completed in 91ms (View: 83, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:42:21) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart (5.9ms)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:43:41) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.8ms)
+Rendered store/_cart (5.7ms)
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-04-10 13:43:45) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (4.7ms)
+Rendered store/_cart (6.7ms)
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://localhost/store/checkout]
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-10 13:44:07) [POST]
+  Parameters: {"commit"=>"Place Order", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "order"=>{"address"=>"163 Valley Stream Cir NW\r\nCalgary, AB\r\nT3B 5W1", "name"=>"Joel Charlesworth", "pay_type"=>"cc", "email"=>"joelc@jrctech.com"}}
+  [4;36;1mOrder Create (0.4ms)[0m   [0;1mINSERT INTO "orders" ("name", "address", "created_at", "updated_at", "pay_type", "email") VALUES('Joel Charlesworth', '163 Valley Stream Cir NW
+Calgary, AB
+T3B 5W1', '2010-04-10 19:44:07', '2010-04-10 19:44:07', 'cc', 'joelc@jrctech.com')[0m
+  [4;35;1mLineItem Create (0.1ms)[0m   [0mINSERT INTO "line_items" ("created_at", "product_id", "quantity", "order_id", "total_price", "updated_at") VALUES('2010-04-10 19:44:07', 2, 2, 2, 57.0, '2010-04-10 19:44:07')[0m
+Redirected to http://localhost:3000/store
+Completed in 90ms (DB: 1) | 302 Found [http://localhost/store/save_order]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:44:07) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.7ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-10 13:44:10) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart (5.6ms)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-10 13:44:12) [POST]
+  Parameters: {"authenticity_token"=>"FNsF0eF1IdrjZgVwwxPz5qvNPjx6w+0wtOfbVch5TTE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-10 13:44:12) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.7ms)
+Completed in 81ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
