@@ -85,3 +85,407 @@ Processing AdminController#index (for 0.0.0.0 at 2010-04-12 00:55:43) [GET]
 Redirected to http://test.host/admin/login
 Filter chain halted as [:authorize] rendered_or_redirected.
 Completed in 1ms (DB: 2) | 302 Found [http://test.host/admin]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:25:28) [POST]
+  Parameters: {"name"=>"dave", "password"=>"wrong"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 18ms (View: 15, DB: 4) | 200 OK [http://test.host/admin/login?name=dave&password=wrong]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:25:28) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/admin]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:25:28) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/admin]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:25:28) [POST]
+  Parameters: {"name"=>"dave", "password"=>"secret"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Redirected to http://test.host/admin
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/admin/login?name=dave&password=secret]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:25:43) [POST]
+  Parameters: {"name"=>"dave", "password"=>"wrong"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 12ms (View: 7, DB: 4) | 200 OK [http://test.host/admin/login?name=dave&password=wrong]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:25:43) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/admin]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:25:43) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/admin]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:25:44) [POST]
+  Parameters: {"name"=>"dave", "password"=>"secret"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Redirected to http://test.host/admin
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/admin/login?name=dave&password=secret]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:25:57) [POST]
+  Parameters: {"name"=>"dave", "password"=>"wrong"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 10ms (View: 7, DB: 3) | 200 OK [http://test.host/admin/login?name=dave&password=wrong]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:25:57) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/admin]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:25:57) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/admin]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:25:57) [POST]
+  Parameters: {"name"=>"dave", "password"=>"secret"}
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Redirected to http://test.host/admin
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/admin/login?name=dave&password=secret]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:27:51) [POST]
+  Parameters: {"name"=>"dave", "password"=>"wrong"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 10ms (View: 7, DB: 3) | 200 OK [http://test.host/admin/login?name=dave&password=wrong]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:27:51) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/admin]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:27:51) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/admin]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:27:51) [POST]
+  Parameters: {"name"=>"dave", "password"=>"secret"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Redirected to http://test.host/admin
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/admin/login?name=dave&password=secret]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:28:21) [POST]
+  Parameters: {"name"=>"dave", "password"=>"wrong"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 7, DB: 3) | 200 OK [http://test.host/admin/login?name=dave&password=wrong]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:28:21) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/admin]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:28:21) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/admin]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:28:21) [POST]
+  Parameters: {"name"=>"dave", "password"=>"secret"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Redirected to http://test.host/admin
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/admin/login?name=dave&password=secret]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:31:01) [POST]
+  Parameters: {"name"=>"dave", "password"=>"wrong"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Rendering template within layouts/store
+Rendering admin/login
+Completed in 11ms (View: 7, DB: 3) | 200 OK [http://test.host/admin/login?name=dave&password=wrong]
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:31:01) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://test.host/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/admin]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#index (for 0.0.0.0 at 2010-04-12 11:31:01) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering template within layouts/store
+Rendering admin/index
+Completed in 7ms (View: 5, DB: 2) | 200 OK [http://test.host/admin]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 413685242) [0m
+
+
+Processing AdminController#login (for 0.0.0.0 at 2010-04-12 11:31:01) [POST]
+  Parameters: {"name"=>"dave", "password"=>"secret"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'dave') LIMIT 1[0m
+Redirected to http://test.host/admin
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/admin/login?name=dave&password=secret]
+  [4;36;1mLineItem Delete all (0.1ms)[0m   [0;1mDELETE FROM "line_items" WHERE 1=1[0m
+  [4;35;1mOrder Delete all (0.1ms)[0m   [0mDELETE FROM "orders" WHERE 1=1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-12 14:15:39) [GET]
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.3ms)
+Completed in 43ms (View: 15, DB: 3) | 200 OK [http://www.example.com/store/index]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-12 14:15:39) [PUT]
+  Parameters: {"id"=>"1007306237"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (1.1ms)
+Rendered store/_cart (2.8ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://www.example.com/store/add_to_cart]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-04-12 14:15:39) [POST]
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (0.5ms)
+Rendered store/_cart (2.3ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://www.example.com/store/checkout]
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-12 14:15:39) [POST]
+  Parameters: {"order"=>{"name"=>"Dave Thomas", "address"=>"123 The Street", "pay_type"=>"check", "email"=>"dave@pragprog.com"}}
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.2ms)
+Completed in 28ms (View: 11, DB: 0) | 200 OK [http://www.example.com/store/save_order]
+  [4;36;1mLineItem Delete all (0.1ms)[0m   [0;1mDELETE FROM "line_items" WHERE 1=1[0m
+  [4;35;1mOrder Delete all (0.1ms)[0m   [0mDELETE FROM "orders" WHERE 1=1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-12 14:16:15) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.9ms)
+Completed in 24ms (View: 15, DB: 4) | 200 OK [http://www.example.com/store/index]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-12 14:16:15) [PUT]
+  Parameters: {"id"=>"1007306237"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (1.8ms)
+Rendered store/_cart (3.4ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/store/add_to_cart]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-04-12 14:16:15) [POST]
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (0.5ms)
+Rendered store/_cart (2.2ms)
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://www.example.com/store/checkout]
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-12 14:16:15) [POST]
+  Parameters: {"order"=>{"name"=>"Dave Thomas", "address"=>"123 The Street", "pay_type"=>"check", "email"=>"dave@pragprog.com"}}
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (0.5ms)
+Rendered store/_cart (2.4ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://www.example.com/store/save_order]
+  [4;36;1mLineItem Delete all (0.1ms)[0m   [0;1mDELETE FROM "line_items" WHERE 1=1[0m
+  [4;35;1mOrder Delete all (0.1ms)[0m   [0mDELETE FROM "orders" WHERE 1=1[0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-12 14:17:06) [GET]
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.3ms)
+Completed in 24ms (View: 15, DB: 4) | 200 OK [http://www.example.com/store/index]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-12 14:17:06) [PUT]
+  Parameters: {"id"=>"1007306237"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (1.3ms)
+Rendered store/_cart (2.8ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/store/add_to_cart]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-04-12 14:17:06) [POST]
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (3.8ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://www.example.com/store/checkout]
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-12 14:17:06) [POST]
+  Parameters: {"order"=>{"name"=>"Dave Thomas", "address"=>"123 The Street", "pay_type"=>"cheque", "email"=>"dave@pragprog.com"}}
+  [4;35;1mOrder Create (0.5ms)[0m   [0mINSERT INTO "orders" ("name", "address", "created_at", "updated_at", "pay_type", "email") VALUES('Dave Thomas', '123 The Street', '2010-04-12 20:17:06', '2010-04-12 20:17:06', 'cheque', 'dave@pragprog.com')[0m
+  [4;36;1mLineItem Create (0.1ms)[0m   [0;1mINSERT INTO "line_items" ("created_at", "product_id", "quantity", "order_id", "total_price", "updated_at") VALUES('2010-04-12 20:17:06', 1007306237, 1, 980190963, 1234.0, '2010-04-12 20:17:06')[0m
+Redirected to http://www.example.com/store
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/store/save_order]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-12 14:17:06) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.3ms)
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://www.example.com/store]
+  [4;36;1mOrder Load (0.2ms)[0m   [0;1mSELECT * FROM "orders" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "line_items" WHERE ("line_items".order_id = 980190963) [0m
+  [4;36;1mLineItem Load (0.2ms)[0m   [0;1mSELECT * FROM "line_items" WHERE ("line_items".order_id = 980190963) [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1007306237) [0m

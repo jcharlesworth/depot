@@ -4102,3 +4102,29 @@ Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/admin/login]
   [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100409232822')[0m
   [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100410191633')[0m
   [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100410191826')[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-12 14:16:48) [GET]
+  [4;36;1mProduct Load (2.2ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.9ms)
+Completed in 74ms (View: 45, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-12 14:16:49) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"tsX0dggWzAFNRwSyqgU2eO/w3abPosNrWyw3I0wxFeQ=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (2.4ms)
+Rendered store/_cart (15.3ms)
+Completed in 41ms (View: 24, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-04-12 14:16:51) [POST]
+  Parameters: {"authenticity_token"=>"tsX0dggWzAFNRwSyqgU2eO/w3abPosNrWyw3I0wxFeQ="}
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (2.5ms)
+Rendered store/_cart (6.3ms)
+Completed in 35ms (View: 21, DB: 1) | 200 OK [http://localhost/store/checkout]
